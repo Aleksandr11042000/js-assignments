@@ -1,19 +1,14 @@
-'use strict';
-
-exports = module.exports = testOptional;
-
-function testOptional(title, fn) {
-    
-    it(title, function() {
-        try {
-           fn.call(this);
-        } catch (err) {
-            if (err.message=="Not implemented") {
-                this.test.skip();
-            } else {
-                throw err;
-            }
-        }
-    });
-
-}
+  /**
+   * Returns the result of concatenation of two strings.
+   *
+   * @param {string} value1
+   * @param {string} value2
+   * @return {string}
+   *
+   * @example
+   *   'aa', 'bb' => 'aabb'
+   *   'aa',''    => 'aa'
+   *   '',  'bb'  => 'bb'
+   */
+  function concatenateStrings(value1, value2) {
+  }
